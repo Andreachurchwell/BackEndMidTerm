@@ -97,9 +97,7 @@ function App() {
 
   return (
     <>
-      {/* input 
-onchange
- handlesubmit api axios request to /create */}
+
 
 
 
@@ -115,7 +113,7 @@ onchange
 
 
 
-            <button id={item._id} onClick={(e) => handleDelete(e)}>delete</button>
+            <button id={item._id} onClick={(e) => handleDelete(e)}>Delete</button>
 
             <button onClick={(e) => handleEdit(item._id)}>Edit</button>
 
@@ -133,18 +131,15 @@ onchange
 
 
       <br /><br /><br />
-      <button onClick={handleSubmit}>submit</button>
+      <button onClick={handleSubmit}>Submit</button>
       <br /><br /><br />
-      <button onClick={handleGetUsers}>get users</button>
+      <button onClick={handleGetUsers}>Get Users</button>
       <input type="text" onChange={(e) => handleChange(e)} placeholder="New username" />
       <br /><br /><br />
 
       <br /><br />
 
 
-      {/* Input for creating new user */}
-      {/* <button onClick={handleSubmit}>Submit</button>
-      <button onClick={handleGetUsers}>Get Users</button> */}
 
 
     </>
